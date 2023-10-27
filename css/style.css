@@ -288,4 +288,12 @@ opacity:0.3;color:#fff;}
 #page-details .details ul{margin-top: 0;}
 #page-details .details li{font-size: 0.7em;
     color: #fff; font-weight: 600;padding: 1em 1em;}
+
+
+#newsletter{
+    background: url(../images/img16.jpg) no-repeat 0 bottom #000;
+    background-size: cover;
+    position: relative;
+}
+#newsletter .news{width:35%;margin:0 15%;position: relative;}
 /* FIN DETAILS VOYAGES */
