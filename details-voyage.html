@@ -92,7 +92,7 @@
 
     </header>
 
-    <section id="page-titre" class="overlay">
+    <section id="page-titre" class="overlay hidden">
         <h1>Nom de la destination</h1>
         <div class="vague"></div>
     </section>
@@ -136,6 +136,14 @@
                     <div class="tab-content">
                         <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium illo quam. Cumque eius facere explicabo minima vel placeat doloremque, distinctio modi deserunt accusamus officia consequatur. Blanditiis quisquam eveniet nostrum!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium illo quam. Cumque eius facere explicabo
+                                minima vel placeat doloremque, distinctio modi deserunt accusamus officia consequatur. Blanditiis quisquam eveniet
+                                nostrum!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium illo quam. Cumque eius facere explicabo
+                                    minima vel placeat doloremque, distinctio modi deserunt accusamus officia consequatur. Blanditiis quisquam eveniet
+                                    nostrum!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium illo quam. Cumque eius facere explicabo
+                                        minima vel placeat doloremque, distinctio modi deserunt accusamus officia consequatur. Blanditiis quisquam eveniet
+                                        nostrum!</p>
                         </div>
                         <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sapiente voluptate error quae earum aperiam, quis quaerat iusto itaque, alias sit commodi officia sint eaque id fugiat non delectus nobis!</p>
@@ -170,7 +178,7 @@
             </section>
             <aside class="col-lg-3">
                 <div class="details-cout">
-                    <span> 649 € / personne</span>
+                    <span> <b>649 €</b> / personne</span>
                     <div>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -181,20 +189,25 @@
                 </div>
 
                 <form action="" method="POST">
-                    <input type="text" placeholder="Votre nom" name="nom">
-                    <input type="email" placeholder="Votre email" name="email">
-                    <input type="number" placeholder="Votre téléphone" name="telephone">
-                    <input type="date">
-
-                    <div class="form-check">
-                        <input type="checkbox" id="guide" value="guide" name="guide" class="form-check-input">
-                        <label for="guide" class="form-check-label">Guide touristique</label>
+                    <div class="btn-secondary">
+                       <h3>Réservation</h3> 
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" id="assurance" value="assurance" name="assurance" checked class="form-check-input">
-                        <label for="assurance" class="form-check-label">Assurance</label>
-                    </div>
-                    <input type="submit" class="btn btn-primary">
+                    <input type="text" placeholder="Votre nom" name="nom" class="form-control mb-3">
+                    <input type="email" placeholder="Votre email" name="email" class="form-control mb-3">
+                    <input type="number" placeholder="Votre téléphone" name="telephone" class="form-control mb-3">
+                    <input type="date" class="form-control mb-3">
+                    <fieldset>
+                        <legend>Ajouter des options</legend>
+                        <div class="form-check">
+                            <input type="checkbox" id="guide" value="guide" name="guide" class="form-check-input">
+                            <label for="guide" class="form-check-label">Guide touristique</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="assurance" value="assurance" name="assurance" checked class="form-check-input">
+                            <label for="assurance" class="form-check-label">Assurance</label>
+                        </div>
+                    </fieldset>
+                    <input type="submit" class="btn btn-primary form-control my-3">
                 </form>
 
                 <div id="infos-commerciales">
@@ -205,7 +218,7 @@
                 </div><!-- Fin de infos commerciales-->
 
 
-                <div id="autres">
+                <div id="autres" class="overlay">
                     <h4>Autres voyages</h4>
                     <h5>lorem ipsum dolor</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>

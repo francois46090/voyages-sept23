@@ -37,6 +37,12 @@ max-height:225px;overflow:hidden;
     text-align: center;
     padding: 2em;}
 
+#newsletter .news {
+    width: 95%;}
+
+header nav{background:#f56960;margin-bottom:1em;}
+.btn-primary{background:#fff;color:#101F46}
+
 }
 
 

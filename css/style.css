@@ -10,6 +10,7 @@ Police texte : Open sans.
 font-family: 'Open Sans', sans-serif; 
 font-family: 'Raleway',sans-serif; 
 */
+*{position: relative;}
 body{margin:0;padding:0;
 font-family: 'Open Sans', sans-serif;
 color:#101F46;background: #fafafa;
@@ -37,9 +38,11 @@ a:hover{color:#0791be;text-decoration: none;}
 }
 
 .btn-primary{background-color:#f56960;}
+.border-primary{border-color:#f56960!important}
 .btn-primary:hover{background-color: #bd534b;}
 a.btn-primary,input[type=submit]{border:none;}
-.btn-secondary{background-color:#0791be;}
+.btn-secondary{background-color:#0791be!important;}
+.border-secondary{border-color:#0791be;}
 .btn-secondary:hover {background-color: #066a8b;
 }
 a.btn-secondary,button.btn-primary{border:none;}
@@ -293,7 +296,50 @@ opacity:0.3;color:#fff;}
 #newsletter{
     background: url(../images/img16.jpg) no-repeat 0 bottom #000;
     background-size: cover;
-    position: relative;
+    position: relative;margin-top:2em;
 }
 #newsletter .news{width:35%;margin:0 15%;position: relative;}
+
+
+/* Barre latérale */
+.details-cout {
+    background: #f56960;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+aside form,#infos-commerciales {
+    background: rgba(200, 175, 151,0.2);
+    padding: 1em;
+    margin-bottom: 2.5em;
+    border-bottom:3px solid #0791be;
+}
+
+legend{font-size: 1.2em;font-weight: 600;}
+
+aside form h3{font-size: 1em; color:#fff;text-align: center;padding:1.5em;}
+
+#infos-commerciales{text-align: center;}
+
+#autres{
+    background:url(../images/gallery-1.jpg) no-repeat scroll 0 bottom #000;
+    color:#fff;padding:1em;
+}
+
+#autres .list-group {   
+    --bs-list-group-bg:rgba(0,0,0,0);
+}
+#autres li.list-group-item {
+    color: #fff;
+}
+#autres h5{color:#fff;}
+
+#autres.overlay::before{
+    background-color: rgba(3, 31, 122, 0.5);
+}
+
+#autres i.bi {
+    margin-right: 1em;}
 /* FIN DETAILS VOYAGES */
